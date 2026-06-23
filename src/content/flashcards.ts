@@ -13,7 +13,7 @@ export const FLASHDECKS: FlashDeck[] = [
       { front: "Chuẩn phục vụ Doanh nghiệp 3 chữ?", back: "ĐÚNG – NHANH – RÕ." },
       { front: "3R điểm đau của khách Doanh nghiệp?", back: "Rủi ro – Rush (gấp) – Rõ ràng." },
       { front: "Công thức tư duy T.I.Ề.N?", back: "Thời gian – Ích lợi – Êm đẹp – Ngắn gọn." },
-      { front: "Khách DN luôn cần biết điều gì?", back: "Lỗi nằm ở đâu (VNPT / Thuế / DN) + bao giờ xong." },
+      { front: "Khách DN luôn cần biết điều gì?", back: "Lỗi nằm ở đâu: VNPT / DN / cổng nhà nước (Thuế, Hải quan, Kho bạc, BHXH…) + bao giờ xong." },
     ],
   },
   {

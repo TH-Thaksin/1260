@@ -57,7 +57,7 @@ export const MODULES: Module[] = [
         kind: "callout",
         tone: "info",
         title: "Thông điệp xuyên suốt khóa học",
-        text: "Khách Doanh nghiệp cần biết: lỗi nằm ở đâu (VNPT, Thuế, hay do DN) + bao giờ xong. Mọi kỹ năng phía sau đều phục vụ mục tiêu này.",
+        text: "Khách Doanh nghiệp cần biết: lỗi nằm ở đâu — do VNPT, do DN, hay do cổng nhà nước (Thuế, Hải quan, Kho bạc, BHXH…) + bao giờ xong. Mọi kỹ năng phía sau đều phục vụ mục tiêu này.",
       },
     ],
   },
