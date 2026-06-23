@@ -14,7 +14,7 @@ export default function FinalPage() {
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-8">
-      <h1 className="text-2xl font-bold text-slate-800">🏁 Bài kiểm tra cuối khóa</h1>
+      <h1 className="text-2xl font-bold text-slate-800">🏁 Bài kiểm tra nghiệp vụ</h1>
       <p className="mt-1 text-slate-500">
         {FINAL_QUIZ.questions.length} câu tổng hợp · đạt ≥ {FINAL_QUIZ.pass}%.
       </p>

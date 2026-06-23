@@ -50,7 +50,7 @@ export default function ModuleView({
             ❓ Làm quiz
           </Link>
         )}
-        {mod.slug === "m7-thuc-chien" && (
+        {mod.slug === "m7-thuc-hanh-tong-ket" && (
           <Link
             href="/practice"
             className="rounded-lg bg-rose-100 px-3 py-1.5 text-sm font-medium text-rose-700 hover:bg-rose-200"

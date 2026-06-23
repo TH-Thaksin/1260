@@ -5,7 +5,7 @@ import SiteHeader from "@/components/SiteHeader";
 export const metadata: Metadata = {
   title: "Đào tạo CSKH B2B · Đài 18001260",
   description:
-    "App đào tạo Chuẩn hóa Kỹ năng & Hỗ trợ Khách hàng B2B — EMAS, tình huống thực hành, Flashcard, Quiz, Game.",
+    "App đào tạo nghiệp vụ Chăm sóc Khách hàng B2B — kỹ năng tiếp nhận, tư vấn, giao tiếp; tình huống thực hành, Flashcard, Quiz, Game.",
 };
 
 export default function RootLayout({

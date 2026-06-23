@@ -33,7 +33,7 @@ export const SCENARIOS: Scenario[] = [
     ],
     wrong: "ĐTV chỉ xin thông tin và chuyển địa bàn, không cung cấp thông tin cơ bản về giá/dịch vụ.",
     right: "Khai thác nhu cầu → cung cấp thông tin cơ bản → xác nhận → chuyển địa bàn.",
-    criteria: ["1.x Nghiệp vụ", "Tư vấn IB"],
+    criteria: ["Tiếp nhận & chẩn đoán", "Tư vấn chủ động"],
   },
   {
     slug: "sc-vcc-hotline",
@@ -64,7 +64,7 @@ export const SCENARIOS: Scenario[] = [
     ],
     wrong: "Tư vấn bị động, chưa logic; chỉ trả lời khi KH hỏi dồn.",
     right: "Chủ động tư vấn ngay đầu cuộc gọi, dẫn dắt theo trình tự nhu cầu → giải pháp → giá.",
-    criteria: ["1.x Nghiệp vụ", "Tư vấn IB"],
+    criteria: ["Tiếp nhận & chẩn đoán", "Tư vấn chủ động"],
   },
   {
     slug: "sc-voice-brn",
@@ -95,7 +95,7 @@ export const SCENARIOS: Scenario[] = [
     ],
     wrong: "Chỉ xác nhận nhu cầu rồi chuyển địa bàn, không tư vấn dù KH có thể chưa nắm hết dịch vụ.",
     right: "Khai thác mức độ nắm thông tin của KH → tư vấn cơ bản → chuyển địa bàn.",
-    criteria: ["Tư vấn IB"],
+    criteria: ["Tư vấn chủ động"],
   },
   {
     slug: "sc-loa-thanh-toan",
@@ -126,7 +126,7 @@ export const SCENARIOS: Scenario[] = [
     ],
     wrong: "Hỏi lại điều KH đã nói rõ; câu từ chưa ổn; chỉ nêu giá chứ chưa tư vấn cụ thể.",
     right: "Ghi nhận đúng nhu cầu KH đã nêu → tư vấn lợi ích & gói phù hợp → xác nhận.",
-    criteria: ["4.x Giao tiếp", "Tư vấn IB"],
+    criteria: ["Giao tiếp & đồng cảm", "Tư vấn chủ động"],
   },
   {
     slug: "sc-econtract",
@@ -157,7 +157,7 @@ export const SCENARIOS: Scenario[] = [
     ],
     wrong: "(Không có — đây là ca mẫu Đạt để học theo.)",
     right: "Khai thác bối cảnh KH (quy mô, hệ thống đang dùng) và tư vấn đúng nhu cầu.",
-    criteria: ["1.x Nghiệp vụ", "Tư vấn IB"],
+    criteria: ["Tiếp nhận & chẩn đoán", "Tư vấn chủ động"],
   },
   {
     slug: "sc-cho-may",
@@ -165,30 +165,30 @@ export const SCENARIOS: Scenario[] = [
     badge: "Cần cải thiện",
     context:
       "Sau khi cho khách chờ máy để tra cứu, ĐTV quay lại tiếp tục xử lý nhưng KHÔNG nói lời cảm ơn vì đã chờ.",
-    prompt: "Vì sao đây là lỗi đáng lưu ý?",
+    prompt: "Vì sao đây là thói quen giao tiếp cần sửa?",
     choices: [
       {
         key: "a",
-        text: "Vì thiếu lời Xin lỗi/Cảm ơn khi chờ máy (4.4) — đây là lỗi CÓ TRỪ ĐIỂM.",
+        text: "Vì thiếu phép lịch sự cơ bản — cảm ơn khi để khách chờ giúp khách thấy được tôn trọng.",
         correct: true,
-        feedback: "Đúng. 4.4 là một trong hai lỗi bị trừ điểm trực tiếp ảnh hưởng KPI.",
+        feedback: "Đúng. Một lời \"cảm ơn anh/chị đã chờ máy\" tạo thiện cảm và thể hiện sự chuyên nghiệp.",
       },
       {
         key: "b",
         text: "Không sao, chờ máy là chuyện bình thường.",
         correct: false,
-        feedback: "Sai. Cảm ơn khi chờ máy (4.4) là tiêu chí có trừ điểm.",
+        feedback: "Khách bỏ thời gian chờ — một lời cảm ơn nhỏ tạo khác biệt lớn về trải nghiệm.",
       },
       {
         key: "c",
-        text: "Chỉ ảnh hưởng nếu KH phàn nàn.",
+        text: "Chỉ cần quan tâm nếu khách phàn nàn.",
         correct: false,
-        feedback: "Hệ thống EMAS tự ghi nhận, không cần KH phàn nàn.",
+        feedback: "Phép lịch sự nên là thói quen mặc định, không đợi khách phản ứng.",
       },
     ],
-    wrong: "Sau khi KH chờ máy, ĐTV không cảm ơn.",
-    right: "Luôn nói \"Cảm ơn anh/chị đã chờ máy\" khi quay lại — tránh mất điểm 4.4.",
-    criteria: ["4.x Giao tiếp (4.4)"],
+    wrong: "Sau khi khách chờ máy, ĐTV không nói lời cảm ơn.",
+    right: "Luôn nói \"Cảm ơn anh/chị đã chờ máy ạ\" ngay khi quay lại tiếp tục cuộc gọi.",
+    criteria: ["Giao tiếp & đồng cảm"],
   },
   {
     slug: "sc-khong-ky-duoc",
@@ -219,7 +219,7 @@ export const SCENARIOS: Scenario[] = [
     ],
     wrong: "Không xác định Sản phẩm + Platform; chẩn đoán chưa đủ; hỏi lan man, thiếu câu \"định khung\".",
     right: "Đồng cảm → định khung (lỗi gì, trên hệ thống nào) → xin Ultraview → chẩn đoán → xử lý.",
-    criteria: ["1.x Nghiệp vụ (1.2.1)", "4.x Giao tiếp"],
+    criteria: ["Tiếp nhận & chẩn đoán", "Giao tiếp & đồng cảm"],
   },
   {
     slug: "sc-hoa-don",
@@ -250,7 +250,7 @@ export const SCENARIOS: Scenario[] = [
     ],
     wrong: "Nhận việc không thuộc trách nhiệm, không chốt phạm vi rõ ràng, giải thích vòng vo.",
     right: "Phân định phạm vi rõ ràng + dẫn KH đến đúng bên phát hành xử lý.",
-    criteria: ["3.x Trách nhiệm", "4.x Giao tiếp"],
+    criteria: ["Trách nhiệm & cam kết", "Giao tiếp & đồng cảm"],
   },
   {
     slug: "sc-bhxh",
@@ -281,7 +281,7 @@ export const SCENARIOS: Scenario[] = [
     ],
     wrong: "Hẹn mơ hồ / hứa xong trong khi phụ thuộc cổng BHXH; dùng từ chung chung.",
     right: "Đồng cảm – phân định lỗi rõ – đưa hành động cụ thể (theo dõi cổng/email, liên hệ cơ sở nếu gấp).",
-    criteria: ["3.x Trách nhiệm", "2.x Thái độ"],
+    criteria: ["Trách nhiệm & cam kết", "Thái độ"],
   },
   {
     slug: "sc-sim-khoa",
@@ -312,7 +312,7 @@ export const SCENARIOS: Scenario[] = [
     ],
     wrong: "KH phàn nàn nhưng ĐTV không đồng cảm; không tư vấn theo yêu cầu, chỉ xin thông tin chuyển địa bàn.",
     right: "Đồng cảm trước → lắng nghe đúng vấn đề KH nêu → tư vấn theo yêu cầu → mới chuyển nếu cần.",
-    criteria: ["2.x Thái độ", "4.x Giao tiếp", "Tư vấn IB"],
+    criteria: ["Thái độ", "Giao tiếp & đồng cảm", "Tư vấn chủ động"],
   },
 ];
 

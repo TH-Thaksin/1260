@@ -19,7 +19,7 @@ export default function PracticePage() {
       <h1 className="text-2xl font-bold text-slate-800">🎭 Thực hành tình huống</h1>
       <p className="mt-1 text-slate-500">
         {SCENARIOS.length} tình huống thực tế (đã ẩn danh). Chọn cách xử lý và nhận phản hồi
-        theo tiêu chí EMAS. Đã làm: {done}/{SCENARIOS.length}.
+        theo nhóm kỹ năng cần rèn. Đã làm: {done}/{SCENARIOS.length}.
       </p>
 
       <div className="mt-6 space-y-3">
