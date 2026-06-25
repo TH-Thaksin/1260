@@ -18,5 +18,5 @@ export const REFERENCES: { title: string; url: string }[] = [
   },
 ];
 
-export const COURSE_TITLE = "Chuẩn hóa Kỹ năng & Hỗ trợ Khách hàng B2B";
-export const COURSE_SUBTITLE = "Đài 18001260 · \"Vững quy trình – Giỏi chẩn đoán – Khéo giao tiếp\"";
+export const COURSE_TITLE = "Nâng tầm Giao tiếp & Tư vấn chuẩn VNPT";
+export const COURSE_SUBTITLE = "Đài 18001260 · \"Chuẩn 6 bước – Khéo đồng cảm – Tư vấn sắc bén\"";
