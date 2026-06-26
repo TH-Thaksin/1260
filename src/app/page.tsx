@@ -68,11 +68,12 @@ export default function Home() {
       </section>
 
       {/* Lối tắt */}
-      <section className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <section className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
         <QuickLink href="/flashcards" icon="🃏" label="Flashcard" sub="Học nhanh bằng thẻ" />
         <QuickLink href="/quiz" icon="❓" label="Quiz" sub="Kiểm tra từng phần" />
         <QuickLink href="/practice" icon="🎭" label="Thực hành" sub="Tình huống thực tế" />
         <QuickLink href="/game" icon="🎮" label="Game" sub="Ghép thẻ vui" />
+        <QuickLink href="/phrases" icon="📋" label="Mẫu câu" sub="Tra cứu nhanh" />
       </section>
 
       {/* Lộ trình module */}

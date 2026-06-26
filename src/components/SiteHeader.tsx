@@ -12,6 +12,7 @@ const NAV = [
   { href: "/quiz", label: "Quiz" },
   { href: "/practice", label: "Thực hành" },
   { href: "/game", label: "Game" },
+  { href: "/phrases", label: "Mẫu câu" },
   { href: "/final", label: "Kiểm tra cuối" },
 ];
 
