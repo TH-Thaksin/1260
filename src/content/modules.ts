@@ -106,11 +106,28 @@ export const MODULES: Module[] = [
       },
       {
         kind: "sample",
+        title: "Bước 3 — Xác minh thông tin",
+        lines: [
+          '"Dạ, để em hỗ trợ chính xác hơn, anh/chị có thể cho em xin tên doanh nghiệp và số điện thoại liên hệ đăng ký không ạ?"',
+        ],
+        note: "Xác minh định danh ngắn gọn, khéo léo — đặt trong ngữ cảnh 'để hỗ trợ tốt hơn', không hỏi cứng nhắc như điền form.",
+      },
+      {
+        kind: "sample",
         title: "Bước 4 — Khi lỗi thuộc hạ tầng VNPT",
         lines: [
           '"Dạ em rất tiếc về trải nghiệm gián đoạn dịch vụ của mình. Hiện tại đội ngũ kỹ thuật VNPT đang tập trung xử lý và dự kiến sẽ khắc phục hoàn toàn trong [thời gian]…"',
         ],
         note: "Thừa nhận trải nghiệm + cam kết xử lý + mốc thời gian. Không đổ lỗi, không nói chung chung.",
+      },
+      {
+        kind: "sample",
+        title: "Bước 5 — Tóm tắt & Kết thúc",
+        lines: [
+          '"Dạ, tóm lại cuộc gọi hôm nay em đã [ghi nhận lỗi / hướng dẫn xử lý / chuyển kỹ thuật hỗ trợ] cho anh/chị rồi ạ. Anh/chị có cần em hỗ trợ thêm vấn đề nào không ạ?"',
+          '"Dạ không ạ, em cảm ơn anh/chị đã liên hệ VNPT. Chúc anh/chị một ngày tốt lành ạ!"',
+        ],
+        note: "Chốt rõ hành động đã thực hiện → hỏi thêm nhu cầu → mẫu câu chào tạm biệt chuẩn. Không kết thúc đột ngột.",
       },
       {
         kind: "sample",
