@@ -14,7 +14,7 @@ export const REFERENCES: { title: string; url: string }[] = [
   },
   {
     title: "Bài kiểm tra sau khóa học (eLearning VNPT)",
-    url: "https://elearning.vnpt.vn/cuocthi/detail?id=6989b5db58ebeqwh",
+    url: "https://elearning.vnpt.vn/cuocthi/detail?id=6a41e628c9236jkd",
   },
 ];
 
